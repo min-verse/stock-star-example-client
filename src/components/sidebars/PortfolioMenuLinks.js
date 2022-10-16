@@ -1,30 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function MenuLinks() {
+function PortfolioMenuLinks() {
   return (
     <div className="side-menu">
       <ul>
-        <li className="active">
+      <Link to="/">
+        <li>
           <span role="img" aria-label="home">
             🏚
           </span>
           Home
         </li>
-        <li>
+        </Link>
+        <Link to="/portfolio">
+        <li className="active">
           <span role="img" aria-label="heart">
             🗀
           </span>
           My Portfolio
         </li>
+        </Link>
         <li>
           <span role="img" aria-label="plus">
             ➕
           </span>
-          New Album
+          Placeholder
         </li>
       </ul>
     </div>
   );
 }
 
-export default MenuLinks;
+export default PortfolioMenuLinks;

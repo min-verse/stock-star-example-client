@@ -1,8 +1,6 @@
 import React from "react";
 import TopMenu from "../TopMenu";
-import SideMenu from "../SideMenu";
-import GenrePicker from "../GenrePicker";
-import StockList from "../StockList";
+import HomeSideMenu from "../sidebars/HomeSideMenu";
 import MainContent from "../MainContent";
 
 function HomePage() {
@@ -10,7 +8,7 @@ function HomePage() {
   
   <TopMenu />
   <MainContent />
-  <SideMenu />
+  <HomeSideMenu />
   
   </div>);
 }

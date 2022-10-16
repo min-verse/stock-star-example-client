@@ -1,17 +1,17 @@
 import React from "react";
 import StockListing from "./StockListing";
-import { stocks } from "../data/stocks";
 
-function StockList() {
+function StockList({stocks, handleClickChart}) {
   return (
     <>
     <ul>
       {stocks.map((item) => {
         return (<StockListing
         key={item.id}
+        ticker={item.ticker}
         name={item.name}
-        image={item.image}
-        price={item.price}
+        history={item.history}
+        handleClickChart={handleClickChart}
         />);
       })}
       </ul>
